@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Form</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg4.jpg);
+    background-size: cover;
+    background-position: absolute;
+    font-family: sans-serif;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color:white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h3>Contact Us</h3>
+
+<div class="container">
+  <form>
+    <label for="id">Id Number</label>
+    <input type="text" id="id" name="ID Number" placeholder="Your Id..">
+
+    <label for="mail">E-mail</label>
+    <input type="text" id="mail" name="mail" placeholder="Your E-Mail..">
+
+    <label for="country">Branch</label>
+    <select id="branch" name="branch">
+      <option value="CSE">CSE</option>
+      <option value="ECE">ECE</option>
+      <option value="ECM">ECM</option>
+      <option value="ME">ME</option>
+      <option value="CIE">CIE</option>
+      <option value="other">OTHERS</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
